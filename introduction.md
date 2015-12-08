@@ -24,5 +24,3 @@ Authentication to the API occurs via HTTP Basic Auth. Provide your API key as th
 >  ```
 > 
 > curl uses the -u flag to pass basic auth credentials (adding a colon after your API key will prevent it from asking you for a password).
-> 
-> A sample test API key has been provided in all the examples on the page, so you can test out any example right away.
