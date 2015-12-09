@@ -10,3 +10,4 @@ Currently available Diduenjoy resources are the following :
 - `answer_sets`      -> `http://api.diduenjoy.com/api/v1/answer_sets`
 - `clients`          -> `http://api.diduenjoy.com/api/v1/clients`
 - `choices`          -> `http://api.diduenjoy.com/api/v1/choices`
+- `dispatches`       -> `http://api.diduenjoy.com/api/v1/dispatches`
