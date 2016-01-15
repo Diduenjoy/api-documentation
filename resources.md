@@ -4,11 +4,11 @@
 
 Each resource has its own addresses or URIs mapped as follows :
 - `GET http://api.diduenjoy.com/api/v1/:resource_type` - Retrieves as collection of resources
-- `GET http://api.diduenjoy.com/api/v1/:resource_type/:resource_id` - Retrieves a specific resource
+- `GET http://api.diduenjoy.com/api/v1/:resource_type/:id` - Retrieves a specific resource
 
 ### Examples
  
-#### Retrieve all your clients
+#### Retrieve all your responders
  
 ```javascript
 // GET http://api.diduenjoy.com/api/v1/clients
@@ -29,7 +29,7 @@ Each resource has its own addresses or URIs mapped as follows :
  }
  ```
  
-#### Retrieve a specific client
+#### Retrieve a specific responder
  
 ```javascript
 // GET http://api.diduenjoy.com/api/v1/clients/4085f919-82ba-42c2-8a32-2a854f6bcd28
