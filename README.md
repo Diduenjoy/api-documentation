@@ -22,7 +22,7 @@ Your API keys carry many privileges, so be sure to keep them secret!
 Authentication to the API occurs via HTTP Basic Auth. Provide your API key as the basic auth username. You do not need to provide a password.
 
 
-> ### Example Request
+> ### Example
 > 
 > ```bash
 > curl 'http://api.diduenjoy.com/api/v1/surveys' \
@@ -52,89 +52,89 @@ GET | [`/api/v1/surveys/:id`](methods/GET%20surveys%20resource.md) | Get a singl
 
 ## Resources URIs
 
-Each resource has its own addresses or URIs mapped as follows :
+Each resource has its own addresses or URIs mapped as follows:
 - `GET http://api.diduenjoy.com/api/v1/:resource_type` - Retrieves as collection of resources
 - `GET http://api.diduenjoy.com/api/v1/:resource_type/:id` - Retrieves a specific resource
 
 
-### Examples
-
-#### Retrieve all your responders
-
-```javascript
-// GET http://api.diduenjoy.com/api/v1/clients
-{
-  "data": [
-    {
-      "type": "clients",
-      "id": "CLIENT-ID",
-      "attributes": {
-        "created_at": "2015-07-01T16-06-01.123Z",
-        "updated_at": "2015-07-01T16-06-01.123Z",
-        "email": "test-client@example.com"
-      },
-      ...
-    },
-    ...
-   ]
- }
- ```
-
-#### Retrieve a specific responder
-
-```javscript
-// GET http://api.diduenjoy.com/api/v1/clients/CLIENT-ID
-{
-  "data": {
-    "type": "clients",
-    "id": "CLIENT-ID",
-    "attributes": {
-      "created_at": "2015-07-01T16-06-01.123Z",
-      "updated_at": "2015-07-01T16-06-01.123Z",
-      "email": "test-client@example.com"
-    },
-    ...
-  }
- }
-```
+> ### Examples
+> 
+> #### Retrieve all your responders
+> 
+> ```javascript
+> // GET http://api.diduenjoy.com/api/v1/clients
+> {
+>   "data": [
+>     {
+>       "type": "clients",
+>       "id": "CLIENT-ID",
+>       "attributes": {
+>         "created_at": "2015-07-01T16-06-01.123Z",
+>         "updated_at": "2015-07-01T16-06-01.123Z",
+>         "email": "test-client@example.com"
+>       },
+>       ...
+>     },
+>     ...
+>    ]
+>  }
+>  ```
+> 
+> #### Retrieve a specific responder
+> 
+> ```javscript
+> // GET http://api.diduenjoy.com/api/v1/clients/CLIENT-ID
+> {
+>   "data": {
+>     "type": "clients",
+>     "id": "CLIENT-ID",
+>     "attributes": {
+>       "created_at": "2015-07-01T16-06-01.123Z",
+>       "updated_at": "2015-07-01T16-06-01.123Z",
+>       "email": "test-client@example.com"
+>     },
+>     ...
+>   }
+>  }
+> ```
 
 ## Sorting
 
-You can sort your queries with the sort parameter :
+You can sort your queries with the sort parameter:
 
 ```
 http://api.diduenjoy.com/api/v1/:resource_type?sort=:attribute,...
 ```
 
-### Examples
-
-`GET http://api.diduenjoy.com/api/v1/answer_sets?sort=created_at,updated_at`
-
-`GET http://api.diduenjoy.com/api/v1/clients?sort=-email`
+> ### Examples
+> 
+> `GET http://api.diduenjoy.com/api/v1/answer_sets?sort=created_at,updated_at`
+> 
+> `GET http://api.diduenjoy.com/api/v1/clients?sort=-email`
 
 ## Filtering
 
-You can filter you queries with the filter parameter :
+You can filter you queries with the filter parameter:
 
 ```
 GET http://api.diduenjoy.com/api/v1/:resource_type?filter[:attribute]=:value
 ```
 
-### Examples
-
-`GET http://api.diduenjoy.com/api/v1/clients?filter[email]=test@test.com`
+> ### Example
+> 
+> `GET http://api.diduenjoy.com/api/v1/clients?filter[email]=test@test.com`
 
 ## Including
 
-You can include your resources relationships with the include parameter :
+You can include your resources relationships with the include parameter:
 
 ```
 GET http://api.diduenjoy.com/api/v1/:resource_type?include=:relationships
 ```
 
-### Examples
-
-`GET http://api.diduenjoy.com/api/v1/answer_sets?include=client,choices`
+> ### Example
+> 
+> `GET http://api.diduenjoy.com/api/v1/answer_sets?include=client,choices`
 
 # New AnswerSet Callback
 
