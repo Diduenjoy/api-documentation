@@ -1,6 +1,9 @@
-# Diduenjoy - API V1 Documentation
+# Diduenjoy - API Documentation
 
-## API V1 Reference
+[![GitHub version](https://badge.fury.io/gh/Diduenjoy%2Fapi-documentation.svg)](README.md)
+[![MIT license](http://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
+## API Reference
 
 The Diduenjoy API is organized around [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) and [JSON API](http://jsonapi.org/).
 Our API is designed to have predictable, resource-oriented URLs and to use HTTP response codes to indicate API errors. We use built-in HTTP features, like HTTP authentication and HTTP verbs, which can be understood by off-the-shelf HTTP clients, and we support cross-origin resource sharing to allow you to interact securely with our API from a client-side web application (though you should remember that you should never expose your secret API key in any public website's client-side code). JSON will be returned in all responses from the API, including errors.
@@ -20,7 +23,6 @@ Your API keys carry many privileges, so be sure to keep them secret!
 > ![api keys in diduenjoy dahsboard settings](http://api.diduenjoy.com/api-key-screenshot.png)
 
 Authentication to the API occurs via HTTP Basic Auth. Provide your API key as the basic auth username. You do not need to provide a password.
-
 
 > ### Example
 > 
@@ -141,5 +143,3 @@ GET http://api.diduenjoy.com/api/v1/:resource_type?include=:relationships
 You can assign to any survey a callback url, that will be called for each new answer_set completed.
 
 Diduenjoy will `POST` the same content as `http://api.diduenjoy.com/api/v1/answer_sets/:answer_set_id?include=client,choices` to the given callback.
-
-
