@@ -42,7 +42,7 @@ GET | [`/api/v1/clients`](methods/GET%20clients%20collection.md) | List all your
 GET | [`/api/v1/clients/:id`](methods/GET%20clients%20resource.md) | Get a single responder
 GET | [`/api/v1/companies`](methods/GET%20companies%20collection.md) | Get all your companies
 GET | [`/api/v1/companies/:id`](methods/GET%20companies%20resource.md) | Get a single company
-POST | [`/api/v1/dispatches`](methods/GET%20dispatches%20resource.md) | Send a survey to a specified email address
+POST | [`/api/v1/dispatches`](methods/POST%20dispatches%20resource.md) | Send a survey to a specified email address
 GET | [`/api/v1/languages`](methods/GET%20languages%20collection.md) | List all languages available for survey responders
 GET | [`/api/v1/languages/:id`](methods/GET%20languages%20resource.md) | Get a language available for survey responders
 GET | [`/api/v1/questions/:id`](methods/GET%20questions%20resource.md) | Get a single question
