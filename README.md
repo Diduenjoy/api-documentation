@@ -24,3 +24,22 @@ Authentication to the API occurs via HTTP Basic Auth. Provide your API key as th
 >  ```
 > 
 > curl uses the -u flag to pass basic auth credentials (adding a colon after your API key will prevent it from asking you for a password).
+
+## Methods
+
+method | endpoint | description
+------ | -------- | -----------
+GET  | [`/api/v1/answer_sets`](methods/GET%20answer_sets%20collection) | List all your answer_sets
+GET  | [`/api/v1/answer_sets/:id`](methods/GET%20answer_sets%resource) | Get a single answer_set
+GET | [`/api/v1/choices/:id`](methods/GET%choices%resource) | Get a single choice
+GET | [`/api/v1/clients`](methods/GET%clients%20collection) | List all your responders
+GET | [`/api/v1/clients/:id`](methods/GET%clients%resource) | Get a single responder
+GET | [`/api/v1/companies`](methods/GET%companies%20collection) | Get all your companies
+GET | [`/api/v1/companies/:id`](methods/GET%companies%resource) | Get a single company
+POST | [`/api/v1/dispatches`](methods/GET%dispatches%resource) | Send a survey to a specified email address
+GET | [`/api/v1/languages`](methods/GET%languages%20collection) | List all languages available for survey responders
+GET | [`/api/v1/languages/:id`](methods/GET%languages%resource) | Get a language available for survey responders
+GET | [`/api/v1/questions/:id`](methods/GET%questions%resource) | Get a single question
+GET | [`/api/v1/survey_languages/:id`](methods/GET%survey_languages%resource) | Get a single survey_language
+GET | [`/api/v1/surveys`](methods/GET%surveys%20collection) | List all your surveys
+GET | [`/api/v1/surveys/:id`](methods/GET%surveys%resource) | Get a single survey
