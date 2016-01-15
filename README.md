@@ -35,20 +35,20 @@ Authentication to the API occurs via HTTP Basic Auth. Provide your API key as th
 
 method | endpoint | description
 ------ | -------- | -----------
-GET  | [`/api/v1/answer_sets`](methods/GET%20answer_sets%20collection) | List all your answer_sets
-GET  | [`/api/v1/answer_sets/:id`](methods/GET%20answer_sets%resource) | Get a single answer_set
-GET | [`/api/v1/choices/:id`](methods/GET%20choices%resource) | Get a single choice
-GET | [`/api/v1/clients`](methods/GET%20clients%20collection) | List all your responders
-GET | [`/api/v1/clients/:id`](methods/GET%20clients%resource) | Get a single responder
-GET | [`/api/v1/companies`](methods/GET%20companies%20collection) | Get all your companies
-GET | [`/api/v1/companies/:id`](methods/GET%20companies%resource) | Get a single company
-POST | [`/api/v1/dispatches`](methods/GET%20dispatches%resource) | Send a survey to a specified email address
-GET | [`/api/v1/languages`](methods/GET%20languages%20collection) | List all languages available for survey responders
-GET | [`/api/v1/languages/:id`](methods/GET%20languages%resource) | Get a language available for survey responders
-GET | [`/api/v1/questions/:id`](methods/GET%20questions%resource) | Get a single question
-GET | [`/api/v1/survey_languages/:id`](methods/GET%20survey_languages%resource) | Get a single survey_language
-GET | [`/api/v1/surveys`](methods/GET%20surveys%20collection) | List all your surveys
-GET | [`/api/v1/surveys/:id`](methods/GET%20surveys%resource) | Get a single survey
+GET  | [`/api/v1/answer_sets`](methods/GET%20answer_sets%20collection.md) | List all your answer_sets
+GET  | [`/api/v1/answer_sets/:id`](methods/GET%20answer_sets%resource.md) | Get a single answer_set
+GET | [`/api/v1/choices/:id`](methods/GET%20choices%resource.md) | Get a single choice
+GET | [`/api/v1/clients`](methods/GET%20clients%20collection.md) | List all your responders
+GET | [`/api/v1/clients/:id`](methods/GET%20clients%resource.md) | Get a single responder
+GET | [`/api/v1/companies`](methods/GET%20companies%20collection.md) | Get all your companies
+GET | [`/api/v1/companies/:id`](methods/GET%20companies%resource.md) | Get a single company
+POST | [`/api/v1/dispatches`](methods/GET%20dispatches%resource.md) | Send a survey to a specified email address
+GET | [`/api/v1/languages`](methods/GET%20languages%20collection.md) | List all languages available for survey responders
+GET | [`/api/v1/languages/:id`](methods/GET%20languages%resource.md) | Get a language available for survey responders
+GET | [`/api/v1/questions/:id`](methods/GET%20questions%resource.md) | Get a single question
+GET | [`/api/v1/survey_languages/:id`](methods/GET%20survey_languages%resource.md) | Get a single survey_language
+GET | [`/api/v1/surveys`](methods/GET%20surveys%20collection.md) | List all your surveys
+GET | [`/api/v1/surveys/:id`](methods/GET%20surveys%resource.md) | Get a single survey
 
 ## Resources URIs
 
