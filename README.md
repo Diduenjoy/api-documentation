@@ -10,7 +10,7 @@ Our API is designed to have predictable, resource-oriented URLs and to use HTTP 
 
 > ### API Endpoint
 > 
-> ``` http://api.diduenjoy.com/api/v1 ```
+> ``` https://api.diduenjoy.com/api/v1 ```
 
 ## Authentication
 
@@ -20,14 +20,14 @@ Your API keys carry many privileges, so be sure to keep them secret!
 > ### API keys
 > 
 > You can find and generate your API keys in the API tab in your Diduenjoy dashboard settings.
-> ![api keys in diduenjoy dahsboard settings](http://api.diduenjoy.com/api-key-screenshot.png)
+> ![api keys in diduenjoy dahsboard settings](https://api.diduenjoy.com/api-key-screenshot.png)
 
 Authentication to the API occurs via HTTP Basic Auth. Provide your API key as the basic auth username. You do not need to provide a password.
 
 > ### Example
 > 
 > ```bash
-> curl 'http://api.diduenjoy.com/api/v1/surveys' \
+> curl 'https://api.diduenjoy.com/api/v1/surveys' \
 >  -u 'PUT-YOUR-API-KEY-HERE:'
 >  ```
 > 
@@ -55,8 +55,8 @@ GET | [`/api/v1/surveys/:id`](methods/GET%20surveys%20resource.md) | Get a singl
 ## Resources URIs
 
 Each resource has its own addresses or URIs mapped as follows:
-- `GET http://api.diduenjoy.com/api/v1/:resource_type` - Retrieves as collection of resources
-- `GET http://api.diduenjoy.com/api/v1/:resource_type/:id` - Retrieves a specific resource
+- `GET https://api.diduenjoy.com/api/v1/:resource_type` - Retrieves as collection of resources
+- `GET https://api.diduenjoy.com/api/v1/:resource_type/:id` - Retrieves a specific resource
 
 
 > ### Examples
@@ -64,7 +64,7 @@ Each resource has its own addresses or URIs mapped as follows:
 > #### Retrieve all your responders
 > 
 > ```javascript
-> // GET http://api.diduenjoy.com/api/v1/clients
+> // GET https://api.diduenjoy.com/api/v1/clients
 > {
 >   "data": [
 >     {
@@ -85,7 +85,7 @@ Each resource has its own addresses or URIs mapped as follows:
 > #### Retrieve a specific responder
 > 
 > ```javscript
-> // GET http://api.diduenjoy.com/api/v1/clients/CLIENT-ID
+> // GET https://api.diduenjoy.com/api/v1/clients/CLIENT-ID
 > {
 >   "data": {
 >     "type": "clients",
@@ -105,41 +105,41 @@ Each resource has its own addresses or URIs mapped as follows:
 You can sort your queries with the sort parameter:
 
 ```
-http://api.diduenjoy.com/api/v1/:resource_type?sort=:attribute,...
+https://api.diduenjoy.com/api/v1/:resource_type?sort=:attribute,...
 ```
 
 > ### Examples
 > 
-> `GET http://api.diduenjoy.com/api/v1/answer_sets?sort=created_at,updated_at`
+> `GET https://api.diduenjoy.com/api/v1/answer_sets?sort=created_at,updated_at`
 > 
-> `GET http://api.diduenjoy.com/api/v1/clients?sort=-email`
+> `GET https://api.diduenjoy.com/api/v1/clients?sort=-email`
 
 ## Filtering
 
 You can filter you queries with the filter parameter:
 
 ```
-GET http://api.diduenjoy.com/api/v1/:resource_type?filter[:attribute]=:value
+GET https://api.diduenjoy.com/api/v1/:resource_type?filter[:attribute]=:value
 ```
 
 > ### Example
 > 
-> `GET http://api.diduenjoy.com/api/v1/clients?filter[email]=test@test.com`
+> `GET https://api.diduenjoy.com/api/v1/clients?filter[email]=test@test.com`
 
 ## Including
 
 You can include your resources relationships with the include parameter:
 
 ```
-GET http://api.diduenjoy.com/api/v1/:resource_type?include=:relationships
+GET https://api.diduenjoy.com/api/v1/:resource_type?include=:relationships
 ```
 
 > ### Example
 > 
-> `GET http://api.diduenjoy.com/api/v1/answer_sets?include=client,choices`
+> `GET https://api.diduenjoy.com/api/v1/answer_sets?include=client,choices`
 
 # New AnswerSet Callback
 
 You can assign to any survey a callback url, that will be called for each new answer_set completed.
 
-Diduenjoy will `POST` the same content as `http://api.diduenjoy.com/api/v1/answer_sets/:answer_set_id?include=client,choices` to the given callback.
+Diduenjoy will `POST` the same content as `https://api.diduenjoy.com/api/v1/answer_sets/:answer_set_id?include=client,choices` to the given callback.

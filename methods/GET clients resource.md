@@ -26,6 +26,6 @@ require 'rest-client'
 client_id = 'PUT-YOUR-CLIENT-ID-HERE'
 
 RestClient::Request.execute method: :get,
-  url: "http://api.diduenjoy.com/api/v1/client/#{client_id}",
+  url: "https://api.diduenjoy.com/api/v1/client/#{client_id}",
   user: 'PUT-YOUR-API-KEY-HERE'
 ```

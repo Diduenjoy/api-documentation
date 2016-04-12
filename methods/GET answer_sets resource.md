@@ -31,6 +31,6 @@ require 'rest-client'
 answer_set_id = 'PUT-YOUR-ANSWER_SET-ID-HERE'
 
 RestClient::Request.execute method: :get,
-  url: "http://api.diduenjoy.com/api/v1/answer_sets/#{answer_set_id}",
+  url: "https://api.diduenjoy.com/api/v1/answer_sets/#{answer_set_id}",
   user: 'PUT-YOUR-API-KEY-HERE'
 ```

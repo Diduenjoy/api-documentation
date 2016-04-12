@@ -28,6 +28,6 @@ __choices__  | responder choices
 require 'rest-client'
 
 RestClient::Request.execute method: :get,
-  url: 'http://api.diduenjoy.com/api/v1/answer_sets',
+  url: 'https://api.diduenjoy.com/api/v1/answer_sets',
   user: 'PUT-YOUR-API-KEY-HERE'
 ```

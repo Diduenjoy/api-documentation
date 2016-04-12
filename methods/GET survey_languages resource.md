@@ -28,6 +28,6 @@ require 'rest-client'
 survey_language_id = 'PUT-YOUR-SURVEY_LANGUAGE-ID-HERE'
 
 RestClient::Request.execute method: :get,
-  url: "http://api.diduenjoy.com/api/v1/survey_languages/#{survey_language_id}",
+  url: "https://api.diduenjoy.com/api/v1/survey_languages/#{survey_language_id}",
   user: 'PUT-YOUR-API-KEY-HERE'
 ```

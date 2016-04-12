@@ -29,7 +29,7 @@ __survey_language__ | _required_ | survey to send
 require 'rest-client'
 
 RestClient::Request.execute method: :post,
-  url: 'http://api.diduenjoy.com/api/v1/dispatches',
+  url: 'https://api.diduenjoy.com/api/v1/dispatches',
   user: 'PUT-YOUR-API-KEY-HERE',
   headers: {
     content_type: 'application/vnd.api+json'

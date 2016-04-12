@@ -26,6 +26,6 @@ __survey_languages__  | survey localized texts (at least 1)
 require 'rest-client'
 
 RestClient::Request.execute method: :get,
-  url: 'http://api.diduenjoy.com/api/v1/surveys',
+  url: 'https://api.diduenjoy.com/api/v1/surveys',
   user: 'PUT-YOUR-API-KEY-HERE'
 ```

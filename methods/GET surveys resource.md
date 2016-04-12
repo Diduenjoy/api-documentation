@@ -28,7 +28,7 @@ require 'rest-client'
 survey_id = 'PUT-YOUR-SURVEY-ID-HERE'
 
 RestClient::Request.execute method: :get,
-  url: "http://api.diduenjoy.com/api/v1/surveys/#{survey_id}",
+  url: "https://api.diduenjoy.com/api/v1/surveys/#{survey_id}",
   user: 'PUT-YOUR-API-KEY-HERE'
 
 # => {

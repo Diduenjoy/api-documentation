@@ -24,6 +24,6 @@ __answer_sets__ | client answer_sets
 require 'rest-client'
 
 RestClient::Request.execute method: :get,
-  url: 'http://api.diduenjoy.com/api/v1/clients',
+  url: 'https://api.diduenjoy.com/api/v1/clients',
   user: 'PUT-YOUR-API-KEY-HERE'
 ```

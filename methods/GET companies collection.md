@@ -24,6 +24,6 @@ __surveys__ | company surveys
 require 'rest-client'
 
 RestClient::Request.execute method: :get,
-  url: 'http://api.diduenjoy.com/api/v1/companies',
+  url: 'https://api.diduenjoy.com/api/v1/companies',
   user: 'PUT-YOUR-API-KEY-HERE'
 ```

@@ -25,6 +25,6 @@ require 'rest-client'
 question_id = 'PUT-YOUR-QUESTION-ID-HERE'
 
 RestClient::Request.execute method: :get,
-  url: "http://api.diduenjoy.com/api/v1/questions/#{question_id}",
+  url: "https://api.diduenjoy.com/api/v1/questions/#{question_id}",
   user: 'PUT-YOUR-API-KEY-HERE'
 ```

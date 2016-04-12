@@ -18,6 +18,6 @@ __is_available_company_side__<br>_boolean_ | equal "true" if is available as Did
 require 'rest-client'
 
 RestClient::Request.execute method: :get,
-  url: 'http://api.diduenjoy.com/api/v1/languages',
+  url: 'https://api.diduenjoy.com/api/v1/languages',
   user: 'PUT-YOUR-API-KEY-HERE'
 ```

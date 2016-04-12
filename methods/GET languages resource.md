@@ -20,6 +20,6 @@ require 'rest-client'
 language_id = 'PUT-YOUR-LANGUAGE-ID-HERE'
 
 RestClient::Request.execute method: :get,
-  url: "http://api.diduenjoy.com/api/v1/languages/#{language_id}",
+  url: "https://api.diduenjoy.com/api/v1/languages/#{language_id}",
   user: 'PUT-YOUR-API-KEY-HERE'
 ```
