@@ -138,8 +138,8 @@ GET https://api.diduenjoy.com/api/v1/:resource_type?include=:relationships
 > 
 > `GET https://api.diduenjoy.com/api/v1/answer_sets?include=client,choices`
 
-# New AnswerSet Callback
+# New AnswerSet Webhook
 
-You can assign to any survey a callback url, that will be called for each new answer_set completed.
+You can register a webhook, that will be called for each new answer_set completed.
 
 Diduenjoy will `POST` the same content as `https://api.diduenjoy.com/api/v1/answer_sets/:answer_set_id?include=client,choices` to the given callback.
