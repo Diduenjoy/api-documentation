@@ -20,7 +20,7 @@ Your API keys carry many privileges, so be sure to keep them secret!
 > ### API keys
 > 
 > You can find and generate your API keys in the API tab in your Diduenjoy dashboard settings.
-> ![api keys in diduenjoy dahsboard settings](https://api.diduenjoy.com/api-key-screenshot.png)
+> ![api keys in diduenjoy dahsboard settings](https://f.diduenjoy.com/api-key-screenshot.png)
 
 Authentication to the API occurs via HTTP Basic Auth. Provide your API key as the basic auth username. You do not need to provide a password.
 
