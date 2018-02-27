@@ -2,24 +2,4 @@
 
 ### Create a responder profile
 
-## attributes
-
-attribute          | description
-------------- | -------------
-__email__<br>_string (required)_ | client email
-
-## Examples
-
-### json
-
-```javascript
-// POST /api/v1/clients
-{
-  "data": {
-      "type": "clients",
-      "attributes": {
-        "email": "example@example.com"
-      }
-    }
-}
-```
+Visit the [new API documentation](https://diduenjoy.github.io/docs/#post-code-clients-code)
