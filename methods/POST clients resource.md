@@ -2,4 +2,4 @@
 
 ### Create a responder profile
 
-Visit the [New Api documentation](https://diduenjoy.github.io/docs/#post-code-clients-code)
+Visit the [new API documentation](https://diduenjoy.github.io/docs/#post-code-clients-code)

@@ -2,4 +2,4 @@
 
 ### Get a single company
 
-Visit the [New Api documentation](https://diduenjoy.github.io/docs/#get-code-companies-id-code)
+Visit the [new API documentation](https://diduenjoy.github.io/docs/#get-code-companies-id-code)
