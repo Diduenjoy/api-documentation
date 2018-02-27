@@ -2,5 +2,5 @@
 
 ### Send a survey to a specified email address
 
-Visit the [New Api documentation](https://diduenjoy.github.io/docs/#post-code-easy_dispatches-code)
+Visit the [new API documentation](https://diduenjoy.github.io/docs/#post-code-easy_dispatches-code)
 
