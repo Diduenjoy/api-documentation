@@ -2,4 +2,4 @@
 
 ### Create an answer_set
 
-Visit the [New Api documentation](https://diduenjoy.github.io/docs/#post-code-answer_sets-code)
+Visit the [new API documentation](https://diduenjoy.github.io/docs/#post-code-answer_sets-code)
